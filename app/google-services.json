@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1031024484717",
+    "project_id": "daretodonate-a328e",
+    "storage_bucket": "daretodonate-a328e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031024484717:android:d20dfd3a74339b5503fa64",
+        "android_client_info": {
+          "package_name": "com.developer.blooddonation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031024484717-89dmkgbc1d9oj7h8okpa0rlotqug72h8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ_u5PxNrHcXho6KVbttng9mNjL-2B9Sw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031024484717-89dmkgbc1d9oj7h8okpa0rlotqug72h8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

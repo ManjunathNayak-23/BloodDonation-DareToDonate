@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+
+
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/img_bloodBank"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_bb_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="Prasad Blood Bank"
+            android:textColor="@color/text_black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_bloodBank" />
+
+        <TextView
+            android:id="@+id/txt_bbAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+        android:paddingEnd="4dp"
+
+
+            android:text="D.no 44-617/12, IDA Nacharam, Nacharam, Hyderabad - 500076, Beside Telephone Exchange"
+            app:layout_constraintEnd_toStartOf="@+id/img_btn_maps"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_bb_name" />
+
+        <TextView
+            android:id="@+id/txt_bbLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/poppins"
+            android:padding="4dp"
+            android:text="Hyderabad"
+            android:textColor="@color/text_black"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_outline_location_on_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_bbAddress" />
+
+
+        <ImageButton
+            android:id="@+id/img_btn_maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/white"
+
+            android:src="@drawable/ic_map"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_bbAddress" />
+
+        <Button
+            android:id="@+id/btn_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:fontFamily="@font/roboto"
+            android:text="Call"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_bbLocation" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

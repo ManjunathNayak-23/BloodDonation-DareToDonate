@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary"
+    tools:context=".activities.SplashActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tagName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:src="@drawable/ic_logo" />
+
+    <TextView
+        android:id="@+id/tagName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/splash_effects"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="Dare To Donate"
+        android:textColor="#FFF9F9"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/splash_effects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_splash_bottom"
+        android:translationY="30dp" />
+
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".fragment.DonationRequestFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:elevation="0dp"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+            android:elevation="0dp"
+            app:layout_collapseMode="pin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="16dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:src="@drawable/ic_back_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Donation Request"
+                android:textColor="@color/text_black"
+                android:textSize="22sp" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/donorRequestRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+android:visibility="visible"
+            tools:listitem="@layout/donor_request_single_row"
+
+
+            />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/donationRequestProgressBar"
+            style="@style/SpinKitView.Large.Pulse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            app:SpinKit_Color="@color/color_primary" />
+
+        <ImageView
+            android:id="@+id/placeholder_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@drawable/donation_request" />
+
+        <TextView
+            android:id="@+id/placeholder_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/placeholder_image"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:text="There have been no requests for donations as of yet."
+            android:textColor="@color/text_black"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
